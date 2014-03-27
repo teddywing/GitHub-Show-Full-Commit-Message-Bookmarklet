@@ -1,0 +1,10 @@
+{
+	"name": "GitHub-show-full-commit-message-bookmarklet",
+	"version": "0.0.1",
+	"description": "Bookmarklet that expands & collapses all commit messages on a page",
+	"author": "Teddy Wing",
+	"license": "MIT",
+	"dependencies": {
+		"boomlet": "1.x"
+	}
+}
