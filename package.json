@@ -5,6 +5,6 @@
 	"author": "Teddy Wing",
 	"license": "MIT",
 	"dependencies": {
-		"boomlet": "1.x"
+		"bookmarklet": "0.x"
 	}
 }
