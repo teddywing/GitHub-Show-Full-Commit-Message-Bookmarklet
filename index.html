@@ -55,9 +55,17 @@
 		a:hover { color: #135e77; }
 		
 		
+		.center { text-align: center; }
+		
+		
 		.wrapper { width: 600px; margin: 0 auto; }
 		
 		header { width: 940px; margin: 0 auto 0.5em; font: 4.5em/1.05 'Varela Round'; text-align: center; }
+		
+		p.bookmarklet { margin: 3em 0; }
+		
+		a.bookmarklet { padding: 22px 38px; background-color: #bd1e1e; text-decoration: none; color: #f5f5f5; -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5); -webkit-border-radius: 40px; border-radius: 40px; }
+		a.bookmarklet:hover { background-color: #d12121; }
 		
 		.demo img { width: 100%; }
 		
@@ -80,7 +88,9 @@
 					Drag this link to your browser bookmarks bar:
 				</p>
 				
-				<a href="javascript:(function()%7B(function()%7Bif(-1!%3Dwindow.location.href.indexOf(%22github.com%22))%7Bvar%20e%3D%24(%22.commit%20.hidden-text-expander%20.js-details-target%22)%3B%24(%22.commit.open%22).length%3E0%3F%24(%22.commit%22).removeClass(%22open%22)%3Ae.click()%7D%7D)()%3B%7D)()">GitHub Full Commit</a>
+				<p class="center bookmarklet">
+					<a href="javascript:(function()%7B(function()%7Bif(-1!%3Dwindow.location.href.indexOf(%22github.com%22))%7Bvar%20e%3D%24(%22.commit%20.hidden-text-expander%20.js-details-target%22)%3B%24(%22.commit.open%22).length%3E0%3F%24(%22.commit%22).removeClass(%22open%22)%3Ae.click()%7D%7D)()%3B%7D)()" class="bookmarklet">GitHub Full Commit</a>
+				</p>
 			</div>
 			
 			<h2>Demo</h2>
