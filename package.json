@@ -6,5 +6,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"bookmarklet": "0.x"
+	},
+	"scripts": {
+		"package": "bookmarklet github-show-full-commit-message.js > build/github-show-full-commit-message.bookmarklet"
 	}
 }

@@ -1,0 +1,1 @@
+javascript:(function()%7B(function()%7Bif(-1!%3Dwindow.location.href.indexOf(%22github.com%22))%7Bvar%20e%3D%24(%22.commit-message%20.hidden-text-expander%20.js-details-target%22)%3B%24(%22.commit.open%22).length%3E0%3F%24(%22.commit%22).removeClass(%22open%22)%3Ae.click()%7D%7D)()%3B%7D)()
