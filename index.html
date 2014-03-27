@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>GitHub Show Full Commit Message Bookmarklet</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic|Inika|Vollkorn:400italic,400|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		
+		i { font-style: italic; }
+		
+		body { margin: 30px 0; background-color: #f0eeee; font: 16px 'Noto Serif'; }
+		
+		.wrapper { width: 600px; margin: 0 auto; }
+		
+		header { width: 940px; margin: 0 auto 0.5em; font: 4.5em/1.05 varela-round; text-align: center; }
+		
+		div[role="main"] { font-size: 1.5em; }
+		
+		.demo img { width: 100%; }
+	</style>
+	<!--
+		Headings:
+		
+		Final Choice:
+			- varela-round
+		
+		In:
+			- Kaffeesatz
+			- varela-round
+		
+		Out:
+			- League Gothic
+			- paytone-one
+			- pt-sans-narrow
+			- ropa-sans
+			- passion-one
+			- cabin-condensed
+		
+		Body:
+		
+		Final Choice:
+			- Noto Serif
+		
+		In:
+			- [Inika] (no italic)
+			- Merriweather
+			- Noto Serif
+		
+		Out:
+			- Vollkorn
+	-->
+	<script src="//use.edgefonts.net/kaffeesatz;league-gothic;paytone-one;varela-round;pt-sans-narrow;ropa-sans;passion-one;cabin-condensed.js"></script>
+</head>
+<body>
+	<header>
+		<h1>GitHub Show Full Commit Message Bookmarklet</h1>
+	</header>
+	
+	<div class="wrapper">
+		<div role="main">
+			<p>
+				A bookmarklet that will expand and contract <i>all</i> GitHub commit messages on a page.
+			</p>
+			
+			<div>
+				<p>
+					Drag this link to your browser bookmarks bar:
+				</p>
+				
+				<a href="javascript:(function()%7B(function()%7Bif(-1!%3Dwindow.location.href.indexOf(%22github.com%22))%7Bvar%20e%3D%24(%22.commit%20.hidden-text-expander%20.js-details-target%22)%3B%24(%22.commit.open%22).length%3E0%3F%24(%22.commit%22).removeClass(%22open%22)%3Ae.click()%7D%7D)()%3B%7D)()">GitHub Full Commit</a>
+			</div>
+			
+			<h2>Demo</h2>
+			<p class="demo">
+				<img src="demo.gif" alt="Demo" />
+			</p>
+		</div>
+	</div>
+</body>
+</html>
