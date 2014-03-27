@@ -8,6 +8,6 @@
 		"bookmarklet": "0.x"
 	},
 	"scripts": {
-		"package": "bookmarklet github-show-full-commit-message.js > build/github-show-full-commit-message.bookmarklet"
+		"compile": "bookmarklet github-show-full-commit-message.js > build/github-show-full-commit-message.bookmarklet"
 	}
 }
