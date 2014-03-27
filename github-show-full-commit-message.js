@@ -1,5 +1,12 @@
 (function() {
 	if (window.location.href.indexOf('github.com') != -1) {
-		$('.commit-message .hidden-text-expander .js-details-target').click();
+		var $hidden_text_expander = $('.commit-message .hidden-text-expander .js-details-target');
+		
+		if ($('.commit.open').length > 0) {
+			$('.commit').removeClass('open');
+		}
+		else {
+			$hidden_text_expander.click();
+		}
 	}
 })();
